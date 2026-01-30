@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core Pages -->
+  <url>
+    <loc>https://coaltechllc.com/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/emergency-welding.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/subcontracting.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/training/</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contractors -->
+  <url>
+    <loc>https://coaltechllc.com/contractors/</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/contractors/general-contractors.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/contractors/door-frame-contractors.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/contractors/industrial-maintenance.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/contractors/property-management.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- General Contractor Pages -->
+  <url>
+    <loc>https://coaltechllc.com/gc/tacoma.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Washington Service Areas Index -->
+  <url>
+    <loc>https://coaltechllc.com/service-areas/washington/</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Washington Cities -->
+  <url><loc>https://coaltechllc.com/service-areas/washington/tacoma.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/seattle.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/federal-way.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/auburn.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/kent.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/bellevue.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/chelan.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/cheney.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/grandview.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/renton.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/everett.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/puyallup.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/lakewood.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/pasco.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/richland.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/olympia.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/spokane.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/spokane-valley.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/vancouver.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/yakima.html</loc></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/kennewick.html</loc></url>
+
+</urlset>
