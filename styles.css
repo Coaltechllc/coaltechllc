@@ -118,7 +118,7 @@ a[href^="tel:"]:hover {
 ========================= */
 section {
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   padding: 60px 20px;
 }
 
@@ -225,28 +225,6 @@ blockquote footer {
 }
 
 /* =========================
-   FOOTER
-========================= */
-footer {
-  background: #000;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 14px;
-  border-top: 4px solid #c9a14a;
-}
-
-footer span {
-  display: block;
-  margin-top: 6px;
-  color: #aaa;
-}
-
-.disclosure {
-  margin-top: 12px;
-  font-size: 12px;
-  color: #888;
-}
-/* =========================
    FIX CENTERING FOR ALL PAGES
 ========================= */
 main,
@@ -262,4 +240,56 @@ section {
   max-width: 1100px;
   margin: 0 auto !important;
   padding: 60px 20px !important;
+}
+/* =========================
+   HEADER (Page Header)
+========================= */
+header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #c9a14a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #000;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 4px solid #c9a14a;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer span {
+  display: block;
+  margin-top: 6px;
+  color: #aaa;
+}
+
+.disclosure {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #888;
 }
