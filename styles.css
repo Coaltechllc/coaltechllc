@@ -212,18 +212,32 @@ blockquote footer {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-
 .gallery a:hover img {
   transform: scale(1.05);
 }
-
+.gallery-section {
+  background: #0d0d0d;
+}
 /* =========================
    FAQ
 ========================= */
 .faq-section-dark p {
   margin-bottom: 14px;
 }
+.faq-section {
+  background: #000;
+  border-top: 2px solid #c9a14a;
+  border-bottom: 2px solid #c9a14a;
+}
 
+.faq-section p {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.faq-section strong {
+  color: #c9a14a;
+}
 /* =========================
    FIX CENTERING FOR ALL PAGES
 ========================= */
@@ -292,28 +306,4 @@ footer span {
   margin-top: 12px;
   font-size: 12px;
   color: #888;
-}
-/* =========================
-   GALLERY SECTION
-========================= */
-.gallery-section {
-  background: #0d0d0d;
-}
-
-/* =========================
-   FAQ SECTION
-========================= */
-.faq-section {
-  background: #000;
-  border-top: 2px solid #c9a14a;
-  border-bottom: 2px solid #c9a14a;
-}
-
-.faq-section p {
-  text-align: left;
-  margin: 20px 0;
-}
-
-.faq-section strong {
-  color: #c9a14a;
 }
