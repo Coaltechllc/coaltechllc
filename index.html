@@ -155,7 +155,7 @@
 <section class="testimonials">
   <h2>What Our Commercial Clients Say</h2>
 
-  <div class="testimonial-grid">
+  <div class="testimonial-grid" id="testimonialScroll">
 
     <blockquote>
       <p>
@@ -242,6 +242,42 @@
 
   </div>
 </section>
+<!-- Add this script before closing </body> tag -->
+<script>
+  const testimonialGrid = document.getElementById('testimonialScroll');
+  let scrollPosition = 0;
+  let isScrolling = true;
+
+  function autoScroll() {
+    if (!isScrolling) return;
+    
+    scrollPosition += 1;
+    testimonialGrid.scrollLeft = scrollPosition;
+
+    // Reset to beginning when reaching the end
+    if (scrollPosition >= testimonialGrid.scrollWidth - testimonialGrid.clientWidth) {
+      scrollPosition = 0;
+    }
+  }
+
+  // Auto-scroll every 50ms (adjust speed by changing this number)
+  const scrollInterval = setInterval(autoScroll, 50);
+
+  // Pause on hover
+  testimonialGrid.addEventListener('mouseenter', () => {
+    isScrolling = false;
+  });
+
+  // Resume on mouse leave
+  testimonialGrid.addEventListener('mouseleave', () => {
+    isScrolling = true;
+  });
+
+  // Optional: Stop scrolling when user manually scrolls
+  testimonialGrid.addEventListener('scroll', () => {
+    // You can add logic here if needed
+  });
+</script>
 
 <section class="gallery-section">
   <h2>Recent Commercial Welding Projects</h2>

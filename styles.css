@@ -278,7 +278,7 @@ section li {
   max-width: 1100px;
 }
 /* =========================
-   TESTIMONIALS - SCROLLABLE
+   TESTIMONIALS - AUTO SCROLLING (JavaScript Version)
 ========================= */
 .testimonials {
   background: #0d0d0d;
@@ -293,13 +293,12 @@ section li {
 
 .testimonial-grid {
   display: flex;
-  overflow-x: auto;
   gap: 20px;
   margin: 20px auto;
   max-width: 1100px;
   padding: 10px 0;
+  overflow-x: auto;
   scroll-behavior: smooth;
-  /* Hide scrollbar but keep scrolling functional */
   scrollbar-width: thin;
   scrollbar-color: #c9a14a #111;
 }
@@ -317,6 +316,33 @@ section li {
 .testimonial-grid::-webkit-scrollbar-thumb {
   background: #c9a14a;
   border-radius: 10px;
+}
+
+.testimonial-grid::-webkit-scrollbar-thumb:hover {
+  background: #e0b85a;
+}
+
+blockquote {
+  background: #111;
+  padding: 20px;
+  border-left: 4px solid #c9a14a;
+  font-style: italic;
+  margin: 0;
+  flex: 0 0 300px;
+  min-width: 300px;
+}
+
+blockquote p {
+  text-align: left;
+  margin: 0 0 15px 0;
+  font-style: italic;
+}
+
+blockquote footer {
+  margin-top: 12px;
+  font-style: normal;
+  color: #aaa;
+  text-align: center;
 }
 
 .testimonial-grid::-webkit-scrollbar-thumb:hover {
