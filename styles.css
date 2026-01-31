@@ -62,7 +62,7 @@ a:hover {
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.9)
     ),
-    url("/job1.jpg") center / cover no-repeat;
+    url("/hero-welding.jpg") center / cover no-repeat;
   padding: 80px 20px;
   text-align: center;
   border-bottom: 4px solid #c9a14a;
@@ -93,7 +93,7 @@ a:hover {
   margin-top: 24px;
   padding: 16px 30px;
   background: #c9a14a;
-  color: #000;
+  color: hsl(0, 0%, 0%);
   font-size: 18px;
   font-weight: bold;
   border-radius: 4px;
