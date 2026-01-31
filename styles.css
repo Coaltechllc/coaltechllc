@@ -32,6 +32,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/* Phone number links */
+a[href^="tel:"] {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+a[href^="tel:"]:hover {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
 
 /* =========================
    NAVIGATION
