@@ -446,6 +446,110 @@ footer span {
   font-size: 12px;
   color: #888;
 }
+/* =========================
+   WHY CHOOSE US SECTION
+========================= */
+.why-choose-us {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.why-choose-us h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 30px auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.why-card {
+  background: #111;
+  padding: 25px;
+  border-left: 4px solid #c9a14a;
+  border-radius: 4px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  border-left-color: #e0b85a;
+  box-shadow: 0 8px 20px rgba(201, 161, 74, 0.2);
+}
+
+.why-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.why-card h3 {
+  color: #c9a14a;
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.why-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #f5f5f5;
+  text-align: center;
+  margin: 0;
+}
+
+.why-cta {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px;
+  background: #0d0d0d;
+  border-radius: 4px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-cta p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #c9a14a;
+  font-weight: bold;
+}
+
+.why-cta .cta {
+  margin: 0 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why-icon {
+    font-size: 32px;
+  }
+
+  .why-card h3 {
+    font-size: 16px;
+  }
+
+  .why-card p {
+    font-size: 13px;
+  }
+
+  .why-cta .cta {
+    display: block;
+    margin: 10px 0;
+  }
+}
 
 /* =========================
    RESPONSIVE
@@ -462,5 +566,192 @@ footer span {
 
   section h2 {
     font-size: 24px;
+  }
+}
+/* =========================
+   MOBILE EXPERIENCE IMPROVEMENTS
+========================= */
+
+/* Make phone number more prominent and tap-friendly on mobile */
+.main-nav a[href^="tel:"] {
+  background: #c9a14a;
+  color: #000 !important;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.main-nav a[href^="tel:"]:hover {
+  background: #e0b85a;
+  text-decoration: none;
+}
+
+/* Larger touch targets on mobile for buttons */
+@media (max-width: 768px) {
+  .cta {
+    display: block;
+    margin: 12px auto;
+    padding: 18px 30px !important;
+    font-size: 16px !important;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Make testimonials easier to scroll on mobile */
+  .testimonial-grid {
+    padding: 10px 0;
+  }
+
+  blockquote {
+    flex: 0 0 90vw;
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+
+  /* Larger phone button in header */
+  .main-nav a[href^="tel:"] {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  /* Stack gallery in 2 columns on mobile for better view */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  /* Make services list more readable */
+  section ul {
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  section li {
+    margin: 10px 0;
+  }
+
+  /* Improve spacing on smaller screens */
+  section {
+    padding: 30px 15px;
+  }
+
+  header {
+    padding: 30px 15px;
+  }
+
+  .why-card h3 {
+    font-size: 16px;
+  }
+
+  .why-cta .cta {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-nav {
+    gap: 8px;
+    padding: 10px 15px;
+  }
+
+  .main-nav a {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .cta {
+    padding: 16px 20px !important;
+    font-size: 14px !important;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  blockquote {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   SAME-DAY RESPONSE CALLOUT
+========================= */
+.same-day-banner {
+  background: linear-gradient(135deg, #c9a14a 0%, #e0b85a 100%);
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 20px 0;
+  border-radius: 4px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(201, 161, 74, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(201, 161, 74, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(201, 161, 74, 0);
+  }
+}
+
+.same-day-banner a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.same-day-banner a:hover {
+  text-decoration: none;
+}
+
+/* Hero section - make logo larger on mobile to see it better */
+@media (max-width: 768px) {
+  .hero img {
+    max-width: 180px;
+  }
+}
+
+/* Make footer links easier to tap */
+footer a {
+  padding: 5px;
+  display: inline-block;
+}
+
+/* Improve form accessibility on mobile */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    font-size: 16px !important;
+    padding: 14px !important;
+  }
+
+  .form-submit {
+    padding: 16px 30px !important;
+    font-size: 16px !important;
+    min-height: 44px;
   }
 }
