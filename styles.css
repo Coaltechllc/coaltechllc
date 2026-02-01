@@ -756,3 +756,17 @@ footer a {
     min-height: 44px;
   }
 }
+/* Improve perceived performance */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Lazy load images */
+img {
+  loading: lazy;
+}
+
+/* Reduce font loading delay */
+@font-face {
+  font-display: swap;
+}
