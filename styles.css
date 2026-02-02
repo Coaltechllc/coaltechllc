@@ -20,6 +20,7 @@ body {
   background: radial-gradient(circle at top, #1a1a1a, #000);
   color: #f5f5f5;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 /* =========================
@@ -73,6 +74,21 @@ a[href^="tel:"]:hover {
   text-decoration: underline;
 }
 
+/* Phone number styling in nav */
+.main-nav a[href^="tel:"] {
+  background: #c9a14a;
+  color: #000 !important;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.main-nav a[href^="tel:"]:hover {
+  background: #e0b85a;
+  text-decoration: none;
+}
+
 /* =========================
    HERO
 ========================= */
@@ -117,8 +133,13 @@ a[href^="tel:"]:hover {
 ========================= */
 header {
   width: 100%;
+  max-width: 100%;
   padding: 40px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header h1 {
@@ -127,12 +148,14 @@ header h1 {
   letter-spacing: 1px;
   font-size: 32px;
   margin: 0 0 10px 0;
+  text-align: center;
 }
 
 header p {
   font-size: 18px;
   margin: 0 0 20px 0;
   color: #f5f5f5;
+  text-align: center;
 }
 
 /* =========================
@@ -148,6 +171,11 @@ header p {
   font-weight: bold;
   border-radius: 4px;
   text-decoration: none;
+  transition: background 0.3s ease;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta:hover {
@@ -156,7 +184,7 @@ header p {
 }
 
 /* =========================
-   SECTIONS - REGULAR (WHITE BG)
+   SECTIONS - REGULAR
 ========================= */
 section {
   width: 100%;
@@ -165,6 +193,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -277,8 +306,9 @@ section li {
   font-size: 16px;
   max-width: 1100px;
 }
+
 /* =========================
-   TESTIMONIALS - AUTO SCROLLING (JavaScript Version)
+   TESTIMONIALS - AUTO SCROLLING
 ========================= */
 .testimonials {
   background: #0d0d0d;
@@ -316,33 +346,6 @@ section li {
 .testimonial-grid::-webkit-scrollbar-thumb {
   background: #c9a14a;
   border-radius: 10px;
-}
-
-.testimonial-grid::-webkit-scrollbar-thumb:hover {
-  background: #e0b85a;
-}
-
-blockquote {
-  background: #111;
-  padding: 20px;
-  border-left: 4px solid #c9a14a;
-  font-style: italic;
-  margin: 0;
-  flex: 0 0 300px;
-  min-width: 300px;
-}
-
-blockquote p {
-  text-align: left;
-  margin: 0 0 15px 0;
-  font-style: italic;
-}
-
-blockquote footer {
-  margin-top: 12px;
-  font-style: normal;
-  color: #aaa;
-  text-align: center;
 }
 
 .testimonial-grid::-webkit-scrollbar-thumb:hover {
@@ -419,32 +422,59 @@ blockquote footer {
 }
 
 /* =========================
-   FOOTER
+   FOOTER - CENTERED & PROFESSIONAL
 ========================= */
 footer {
   background: #000;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 14px;
+  padding: 40px 20px;
   border-top: 4px solid #c9a14a;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer > * {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 footer p {
-  margin: 10px 0;
+  margin: 10px auto;
   padding: 0;
+  text-align: center;
+  font-size: 14px;
 }
 
 footer span {
   display: block;
-  margin-top: 6px;
+  margin: 6px auto;
   color: #aaa;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: #c9a14a;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e0b85a;
+  text-decoration: underline;
 }
 
 .disclosure {
   margin-top: 12px;
   font-size: 12px;
   color: #888;
+  text-align: center;
 }
 
 /* =========================
@@ -527,168 +557,6 @@ footer span {
   margin: 0 15px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .why-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .why-icon {
-    font-size: 32px;
-  }
-
-  .why-card h3 {
-    font-size: 16px;
-  }
-
-  .why-card p {
-    font-size: 13px;
-  }
-
-  .why-cta .cta {
-    display: block;
-    margin: 10px 0;
-  }
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  .main-nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  section h2 {
-    font-size: 24px;
-  }
-}
-/* =========================
-   MOBILE EXPERIENCE IMPROVEMENTS
-========================= */
-
-/* Make phone number more prominent and tap-friendly on mobile */
-.main-nav a[href^="tel:"] {
-  background: #c9a14a;
-  color: #000 !important;
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.main-nav a[href^="tel:"]:hover {
-  background: #e0b85a;
-  text-decoration: none;
-}
-
-/* Larger touch targets on mobile for buttons */
-@media (max-width: 768px) {
-  .cta {
-    display: block;
-    margin: 12px auto;
-    padding: 18px 30px !important;
-    font-size: 16px !important;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Make testimonials easier to scroll on mobile */
-  .testimonial-grid {
-    padding: 10px 0;
-  }
-
-  blockquote {
-    flex: 0 0 90vw;
-    max-width: 90vw;
-    min-width: 90vw;
-  }
-
-  /* Larger phone button in header */
-  .main-nav a[href^="tel:"] {
-    padding: 10px 16px;
-    font-size: 14px;
-  }
-
-  /* Stack gallery in 2 columns on mobile for better view */
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-
-  /* Make services list more readable */
-  section ul {
-    padding-left: 20px;
-    font-size: 15px;
-  }
-
-  section li {
-    margin: 10px 0;
-  }
-
-  /* Improve spacing on smaller screens */
-  section {
-    padding: 30px 15px;
-  }
-
-  header {
-    padding: 30px 15px;
-  }
-
-  .why-card h3 {
-    font-size: 16px;
-  }
-
-  .why-cta .cta {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-nav {
-    gap: 8px;
-    padding: 10px 15px;
-  }
-
-  .main-nav a {
-    font-size: 12px;
-    padding: 0;
-  }
-
-  .cta {
-    padding: 16px 20px !important;
-    font-size: 14px !important;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  blockquote {
-    flex: 0 0 100%;
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  .hero h1 {
-    font-size: 26px;
-  }
-}
-
 /* =========================
    SAME-DAY RESPONSE CALLOUT
 ========================= */
@@ -726,50 +594,6 @@ footer span {
   text-decoration: none;
 }
 
-/* Hero section - make logo larger on mobile to see it better */
-@media (max-width: 768px) {
-  .hero img {
-    max-width: 180px;
-  }
-}
-
-/* Make footer links easier to tap */
-footer a {
-  padding: 5px;
-  display: inline-block;
-}
-
-/* Improve form accessibility on mobile */
-@media (max-width: 768px) {
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea,
-  select {
-    font-size: 16px !important;
-    padding: 14px !important;
-  }
-
-  .form-submit {
-    padding: 16px 30px !important;
-    font-size: 16px !important;
-    min-height: 44px;
-  }
-}
-/* Improve perceived performance */
-* {
-  scroll-behavior: smooth;
-}
-
-/* Lazy load images */
-img {
-  loading: lazy;
-}
-
-/* Reduce font loading delay */
-@font-face {
-  font-display: swap;
-}
 /* =========================
    BEFORE & AFTER SECTION - MOBILE FRIENDLY
 ========================= */
@@ -880,19 +704,68 @@ img {
 }
 
 /* =========================
-   TABLET RESPONSIVE (768px and below)
+   RESPONSIVE - TABLET (768px and below)
 ========================= */
 
 @media (max-width: 768px) {
+  .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main-nav a {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .main-nav a[href^="tel:"] {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .hero img {
+    max-width: 180px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  .cta {
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+    padding: 18px 30px !important;
+    font-size: 16px !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
   .before-after-grid {
     grid-template-columns: 1fr;
     gap: 20px;
     margin: 20px auto;
     padding: 0 15px;
-  }
-
-  .before-after-card {
-    border: 2px solid #c9a14a;
   }
 
   .before-after-images {
@@ -933,22 +806,136 @@ img {
   .before-after-content p {
     font-size: 12px;
   }
+
+  /* Testimonials on mobile */
+  blockquote {
+    flex: 0 0 90vw;
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+
+  /* Why choose us on mobile */
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why-icon {
+    font-size: 32px;
+  }
+
+  .why-card h3 {
+    font-size: 16px;
+  }
+
+  .why-card p {
+    font-size: 13px;
+  }
+
+  .why-cta .cta {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* Footer on tablet */
+  footer {
+    padding: 30px 15px;
+  }
+
+  footer span {
+    font-size: 13px;
+  }
+
+  /* Forms on tablet */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Navigation accessibility */
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 8px 10px;
+    margin: 4px;
+    font-size: 12px;
+  }
 }
 
 /* =========================
-   MOBILE RESPONSIVE (480px and below)
+   RESPONSIVE - MOBILE (480px and below)
 ========================= */
 
 @media (max-width: 480px) {
+  .main-nav {
+    gap: 8px;
+    padding: 10px 15px;
+  }
+
+  .main-nav a {
+    font-size: 11px;
+    padding: 0;
+  }
+
+  .main-nav a[href^="tel:"] {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  section h2 {
+    font-size: 22px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+
+  .cta {
+    padding: 16px 20px !important;
+    font-size: 14px !important;
+    width: 95%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
   .before-after-grid {
     grid-template-columns: 1fr;
     gap: 15px;
     margin: 15px auto;
     padding: 0 10px;
-  }
-
-  .before-after-card {
-    border: 2px solid #c9a14a;
   }
 
   .before-after-images {
@@ -971,12 +958,6 @@ img {
     min-height: 180px;
   }
 
-  .before-after-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
   .before-after-label {
     font-size: 10px;
     padding: 4px 8px;
@@ -997,103 +978,49 @@ img {
     font-size: 11px;
     line-height: 1.4;
   }
-}
 
-/* =========================
-   UNIVERSAL MOBILE-FRIENDLY IMPROVEMENTS
-========================= */
-
-/* Ensure all images are responsive */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Ensure all grids wrap on mobile */
-[style*="grid-template-columns"] {
-  overflow-x: auto;
-}
-
-/* Ensure all sections have proper padding on mobile */
-section {
-  padding: 30px 15px !important;
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 25px 15px !important;
+  blockquote {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 100%;
   }
 
-  main,
-  .container,
-  .page-content {
-    padding: 25px 15px !important;
+  /* Footer on mobile */
+  footer {
+    padding: 20px 10px;
   }
 
-  /* Ensure buttons stack on mobile */
-  .cta {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    padding: 14px 20px !important;
-    text-align: center;
+  footer p {
+    font-size: 12px;
   }
 
-  /* Ensure forms are mobile friendly */
+  footer span {
+    font-size: 12px;
+    margin: 4px auto;
+  }
+
+  .disclosure {
+    font-size: 11px;
+  }
+
+  /* Forms on mobile */
   input[type="text"],
   input[type="email"],
   input[type="tel"],
   textarea,
   select {
     width: 100% !important;
-    padding: 12px !important;
+    padding: 14px !important;
     font-size: 16px !important;
     box-sizing: border-box !important;
   }
 
-  /* Ensure navigation is readable */
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  nav a {
-    padding: 8px 10px;
-    margin: 4px;
-    font-size: 12px;
-  }
-
-  /* Ensure tables are scrollable */
-  table {
-    font-size: 12px;
-    overflow-x: auto;
-  }
-
-  /* Ensure all containers have max-width */
-  .container,
-  [class*="grid"],
-  [class*="flex"] {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-}
-
-@media (max-width: 480px) {
-  section {
-    padding: 20px 10px !important;
-  }
-
-  main,
-  .container,
-  .page-content {
-    padding: 20px 10px !important;
-  }
-
-  .cta {
-    padding: 12px 15px !important;
-    font-size: 14px !important;
-    width: 95%;
+  button,
+  a[href],
+  input,
+  [role="button"] {
+    min-height: 44px;
+    padding: 10px !important;
   }
 
   h1 {
@@ -1108,62 +1035,44 @@ section {
     font-size: 16px !important;
   }
 
-  p {
-    font-size: 14px !important;
-  }
-
   nav a {
     padding: 6px 8px;
     margin: 3px;
     font-size: 11px;
   }
-
-  /* Ensure touch targets are at least 44px */
-  button,
-  a[href],
-  input,
-  [role="button"] {
-    min-height: 44px;
-    padding: 10px !important;
-  }
 }
 
 /* =========================
-   ACCESSIBILITY - Works on all devices
+   UNIVERSAL RESPONSIVE IMPROVEMENTS
 ========================= */
 
-/* Ensure text is readable */
-body {
-  font-size: 16px;
-  line-height: 1.6;
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  loading: lazy;
 }
 
-/* Ensure focus states visible */
+/* Accessibility focus states */
 a:focus,
 button:focus,
-input:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: 2px solid #c9a14a;
+  outline-offset: 2px;
 }
 
-/* Ensure images have alt text space */
-img[alt] {
-  background: #000;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-/* =========================
-   VIEWPORT SCALING - Prevents zoom
-========================= */
-
-/* Already in your HTML <head> but ensuring it's set:
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-*/
-
-/* =========================
-   MOBILE-FIRST APPROACH
-========================= */
-
-/* All base styles should be mobile-first, then expand for larger screens */
-/* This CSS structure follows mobile-first methodology */
+/* Font display optimization */
+@font-face {
+  font-display: swap;
+}
 
 
 
