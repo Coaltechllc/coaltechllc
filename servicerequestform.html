@@ -3,45 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabrication Service Request - Coaltech LLC</title>
+    <title>Fabrication Service Request - Coal Tech LLC</title>
     <style>
+        /* =========================
+           RESET & BASE
+        ========================= */
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: radial-gradient(circle at top, #1a1a1a, #000);
+            color: #f5f5f5;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* =========================
+           LINKS
+        ========================= */
+        a {
+            color: #c9a14a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a[href^="tel:"] {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        a[href^="tel:"]:hover {
+            color: #f0f0f0;
+            text-decoration: underline;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+        .main-nav {
+            background: #000;
+            padding: 14px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 3px solid #c9a14a;
+            width: 100%;
+        }
+
+        .main-nav a {
+            color: #c9a14a;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+
+        .main-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-nav a[href^="tel:"] {
+            background: #c9a14a;
+            color: #000 !important;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .main-nav a[href^="tel:"]:hover {
+            background: #e0b85a;
+            text-decoration: none;
+        }
+
+        /* =========================
+           FORM CONTAINER
+        ========================= */
+        .form-wrapper {
+            width: 100%;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .form-container {
-            max-width: 800px;
+            max-width: 900px;
+            width: 100%;
             margin: 0 auto;
-            background: white;
+            background: #111;
             padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            border: 2px solid #c9a14a;
         }
 
         .form-header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #c9a14a;
         }
 
         .form-header h1 {
-            color: #2c3e50;
+            color: #c9a14a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             font-size: 32px;
-            margin-bottom: 10px;
+            margin: 0 0 10px 0;
         }
 
         .form-header p {
-            color: #7f8c8d;
-            font-size: 16px;
+            color: #f5f5f5;
+            font-size: 18px;
         }
 
+        /* =========================
+           FORM ELEMENTS
+        ========================= */
         .form-group {
             margin-bottom: 25px;
         }
@@ -49,13 +146,13 @@
         label {
             display: block;
             margin-bottom: 8px;
-            color: #2c3e50;
+            color: #f5f5f5;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .required {
-            color: #e74c3c;
+            color: #c9a14a;
         }
 
         input[type="text"],
@@ -64,12 +161,14 @@
         select,
         textarea {
             width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 5px;
+            padding: 14px 16px;
+            background-color: #0d0d0d;
+            border: 2px solid #333;
+            border-radius: 4px;
+            color: #f5f5f5;
             font-size: 15px;
-            transition: border-color 0.3s;
-            font-family: 'Arial', sans-serif;
+            transition: all 0.3s;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         input[type="text"]:focus,
@@ -77,39 +176,68 @@
         input[type="tel"]:focus,
         select:focus,
         textarea:focus {
-            outline: none;
-            border-color: #3498db;
+            outline: 2px solid #c9a14a;
+            outline-offset: 2px;
+            border-color: #c9a14a;
+            background-color: #1a1a1a;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        select option {
+            background-color: #0d0d0d;
+            color: #f5f5f5;
         }
 
         textarea {
-            min-height: 120px;
+            min-height: 130px;
             resize: vertical;
         }
 
+        /* =========================
+           CHECKBOXES
+        ========================= */
         .checkbox-group {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
 
         .checkbox-item {
             display: flex;
             align-items: center;
+            background-color: #0d0d0d;
+            padding: 12px 14px;
+            border-radius: 4px;
+            border: 2px solid #333;
+            transition: all 0.3s;
+        }
+
+        .checkbox-item:hover {
+            background-color: #1a1a1a;
+            border-color: #c9a14a;
         }
 
         .checkbox-item input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
             cursor: pointer;
+            accent-color: #c9a14a;
         }
 
         .checkbox-item label {
             margin-bottom: 0;
             font-weight: normal;
             cursor: pointer;
+            flex: 1;
         }
 
+        /* =========================
+           FORM LAYOUT
+        ========================= */
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -118,297 +246,488 @@
 
         .submit-btn {
             width: 100%;
-            padding: 15px;
-            background-color: #2c3e50;
-            color: white;
+            padding: 16px;
+            background-color: #c9a14a;
+            color: #fff;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             font-size: 18px;
-            font-weight: 600;
+            font-weight: bold;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            min-height: 44px;
         }
 
         .submit-btn:hover {
-            background-color: #34495e;
+            background: #e0b85a;
         }
 
         .submit-btn:disabled {
-            background-color: #95a5a6;
+            background-color: #666;
             cursor: not-allowed;
+            transform: none;
         }
 
         .info-text {
-            color: #7f8c8d;
+            color: #aaa;
             font-size: 13px;
-            margin-top: 5px;
+            margin-top: 6px;
+            font-style: italic;
         }
 
+        /* =========================
+           MESSAGES
+        ========================= */
+        .message {
+            display: none;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .success-message {
+            background-color: #1e5128;
+            color: #90ee90;
+            border: 2px solid #2d7a3e;
+        }
+
+        .error-message {
+            background-color: #5c1a1a;
+            color: #ff6666;
+            border: 2px solid #8b2929;
+        }
+
+        .section-title {
+            color: #c9a14a;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 35px 0 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+        footer {
+            background: #000;
+            padding: 40px 20px;
+            border-top: 4px solid #c9a14a;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px auto;
+            text-align: center;
+            font-size: 14px;
+            color: #f5f5f5;
+        }
+
+        footer a {
+            color: #c9a14a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #e0b85a;
+            text-decoration: underline;
+        }
+
+        .disclosure {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+
+        /* =========================
+           RESPONSIVE - TABLET
+        ========================= */
         @media (max-width: 768px) {
+            .main-nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .main-nav a {
+                font-size: 12px;
+                padding: 0;
+            }
+
+            .main-nav a[href^="tel:"] {
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+
+            .form-wrapper {
+                padding: 25px 15px;
+            }
+
             .form-container {
                 padding: 25px;
+            }
+
+            .form-header h1 {
+                font-size: 28px;
             }
 
             .form-row {
                 grid-template-columns: 1fr;
             }
 
-            .form-header h1 {
-                font-size: 24px;
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea,
+            select {
+                width: 100% !important;
+                padding: 12px !important;
+                font-size: 16px !important;
+                box-sizing: border-box !important;
+            }
+
+            footer {
+                padding: 30px 15px;
             }
         }
 
-        .message {
-            display: none;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-            margin-bottom: 20px;
+        /* =========================
+           RESPONSIVE - MOBILE
+        ========================= */
+        @media (max-width: 480px) {
+            .main-nav {
+                gap: 8px;
+                padding: 10px 15px;
+            }
+
+            .main-nav a {
+                font-size: 11px;
+            }
+
+            .main-nav a[href^="tel:"] {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+
+            .form-wrapper {
+                padding: 20px 10px;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+
+            .form-header h1 {
+                font-size: 24px;
+            }
+
+            .form-header p {
+                font-size: 16px;
+            }
+
+            .submit-btn {
+                padding: 16px 20px !important;
+                font-size: 16px !important;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea,
+            select {
+                width: 100% !important;
+                padding: 14px !important;
+                font-size: 16px !important;
+                box-sizing: border-box !important;
+            }
+
+            footer {
+                padding: 20px 10px;
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+
+            .disclosure {
+                font-size: 11px;
+            }
         }
 
-        .success-message {
-            background-color: #2ecc71;
-            color: white;
+        /* =========================
+           ACCESSIBILITY
+        ========================= */
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid #c9a14a;
+            outline-offset: 2px;
         }
 
-        .error-message {
-            background-color: #e74c3c;
-            color: white;
-        }
-
-        .section-title {
-            color: #2c3e50;
-            font-size: 18px;
-            font-weight: 600;
-            margin: 30px 0 15px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e0e0e0;
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
-    <div class="form-container">
-        <div class="form-header">
-            <h1>Fabrication Service Request</h1>
-            <p>Welding & Hollow Metal Door/Frame Services</p>
-        </div>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="/">HOME</a>
+        <a href="/service-areas/washington/">WA SERVICE AREAS</a>
+        <a href="/training/">TRAINING FOR EMPLOYERS</a>
+        <a href="/subcontracting.html">SUBCONTRACTING</a>
+        <a href="tel:2533358622">📞 253-335-8622</a>
+    </nav>
 
-        <div id="successMessage" class="message success-message">
-            Thank you! Your request has been submitted. We'll contact you within 24-48 hours.
-        </div>
+    <!-- Form -->
+    <div class="form-wrapper">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Fabrication Service Request</h1>
+                <p>Welding & Hollow Metal Door/Frame Services</p>
+            </div>
 
-        <div id="errorMessage" class="message error-message">
-            Sorry, there was an error submitting your form. Please try again or contact us directly.
-        </div>
+            <div id="successMessage" class="message success-message">
+                Thank you! Your request has been submitted. We'll contact you within 24-48 hours.
+            </div>
 
-        <!-- Web3Forms - Replace YOUR_ACCESS_KEY with your key from https://web3forms.com -->
-        <form action="https://api.web3forms.com/submit" method="POST" id="quoteForm">
-            
-            <!-- Web3Forms Access Key - Get yours at https://web3forms.com -->
-            <input type="hidden" name="access_key" value="71ebdf9e-82a3-415d-9c89-8ec6015b86cd">
-            
-            <!-- Redirect after submission (optional) -->
-            <input type="hidden" name="redirect" value="https://coaltechllc.com/thank-you.html">
-            
-            <!-- Contact Information -->
-            <div class="section-title">Contact Information</div>
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Full Name <span class="required">*</span></label>
-                    <input type="text" name="name" required>
+            <div id="errorMessage" class="message error-message">
+                Sorry, there was an error submitting your form. Please try again or contact us directly at 253-335-8622.
+            </div>
+
+            <!-- Web3Forms -->
+            <form action="https://api.web3forms.com/submit" method="POST" id="quoteForm">
+                
+                <!-- Replace with your Web3Forms access key -->
+                <input type="hidden" name="access_key" value="71ebdf9e-82a3-415d-9c89-8ec6015b86cd">
+                
+                <!-- Contact Information -->
+                <div class="section-title">Contact Information</div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name <span class="required">*</span></label>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Company Name <span class="required">*</span></label>
+                        <input type="text" name="company" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number <span class="required">*</span></label>
+                        <input type="tel" name="phone" required>
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Company Name <span class="required">*</span></label>
-                    <input type="text" name="company" required>
+                    <label>Project Location/Address <span class="required">*</span></label>
+                    <input type="text" name="location" required>
                 </div>
-            </div>
 
-            <div class="form-row">
+                <!-- Service Type -->
+                <div class="section-title">Service Type</div>
+                
                 <div class="form-group">
-                    <label>Email <span class="required">*</span></label>
-                    <input type="email" name="email" required>
+                    <label>What service do you need? <span class="required">*</span></label>
+                    <select name="service_type" required>
+                        <option value="">-- Select a Service --</option>
+                        <option value="welding">Welding Services</option>
+                        <option value="hollow_metal">Hollow Metal Door & Frame</option>
+                        <option value="both">Both Services</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
 
+                <!-- Welding Services -->
+                <div class="section-title">Welding Services (if applicable)</div>
+                
                 <div class="form-group">
-                    <label>Phone Number <span class="required">*</span></label>
-                    <input type="tel" name="phone" required>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Project Location/Address <span class="required">*</span></label>
-                <input type="text" name="location" required>
-            </div>
-
-            <!-- Service Type -->
-            <div class="section-title">Service Type</div>
-            
-            <div class="form-group">
-                <label>What service do you need? <span class="required">*</span></label>
-                <select name="service_type" required>
-                    <option value="">-- Select a Service --</option>
-                    <option value="welding">Welding Services</option>
-                    <option value="hollow_metal">Hollow Metal Door & Frame</option>
-                    <option value="both">Both Services</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-
-            <!-- Welding Services -->
-            <div class="section-title">Welding Services (if applicable)</div>
-            
-            <div class="form-group">
-                <label>Type of Welding Needed</label>
-                <div class="checkbox-group">
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="welding_mig" value="yes" id="mig">
-                        <label for="mig">MIG Welding</label>
+                    <label>Type of Welding Needed</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="welding_mig" value="yes" id="mig">
+                            <label for="mig">MIG Welding (GMAW)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="welding_tig" value="yes" id="tig">
+                            <label for="tig">TIG Welding (GTAW)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="welding_stick" value="yes" id="stick">
+                            <label for="stick">Stick Welding (SMAW)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="welding_flux" value="yes" id="flux">
+                            <label for="flux">Flux-Core Welding (FCAW)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="welding_structural" value="yes" id="structural">
+                            <label for="structural">Structural Welding</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="welding_pipe" value="yes" id="pipe">
+                            <label for="pipe">Pipe Welding</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="welding_consult" value="yes" id="not-sure-welding">
+                            <label for="not-sure-welding">Not Sure - Need Consultation</label>
+                        </div>
                     </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="welding_tig" value="yes" id="tig">
-                        <label for="tig">TIG Welding</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="welding_stick" value="yes" id="stick">
-                        <label for="stick">Stick Welding</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="welding_structural" value="yes" id="structural">
-                        <label for="structural">Structural Welding</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="welding_pipe" value="yes" id="pipe">
-                        <label for="pipe">Pipe Welding</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="welding_consult" value="yes" id="not-sure-welding">
-                        <label for="not-sure-welding">Not Sure - Need Consultation</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Material Type</label>
-                <select name="material_type">
-                    <option value="">-- Select Material --</option>
-                    <option value="carbon_steel">Carbon Steel</option>
-                    <option value="stainless_steel">Stainless Steel</option>
-                    <option value="aluminum">Aluminum</option>
-                    <option value="other">Other/Not Sure</option>
-                </select>
-            </div>
-
-            <!-- Hollow Metal Door & Frame Services -->
-            <div class="section-title">Hollow Metal Door & Frame (if applicable)</div>
-            
-            <div class="form-group">
-                <label>Service Needed</label>
-                <div class="checkbox-group">
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="door_install" value="yes" id="install">
-                        <label for="install">New Installation</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="door_repair" value="yes" id="repair">
-                        <label for="repair">Repair</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="door_fabrication" value="yes" id="fabrication">
-                        <label for="fabrication">Custom Fabrication</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" name="door_replacement" value="yes" id="replacement">
-                        <label for="replacement">Replacement</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Number of Doors/Frames</label>
-                    <input type="text" name="quantity" placeholder="e.g., 5 doors, 3 frames">
                 </div>
 
                 <div class="form-group">
-                    <label>Fire Rating Required?</label>
-                    <select name="fire_rating">
+                    <label>Material Type</label>
+                    <select name="material_type">
+                        <option value="">-- Select Material --</option>
+                        <option value="carbon_steel">Carbon Steel</option>
+                        <option value="stainless_steel">Stainless Steel</option>
+                        <option value="aluminum">Aluminum</option>
+                        <option value="other">Other/Not Sure</option>
+                    </select>
+                </div>
+
+                <!-- Hollow Metal Door & Frame Services -->
+                <div class="section-title">Hollow Metal Door & Frame (if applicable)</div>
+                
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="door_install" value="yes" id="install">
+                            <label for="install">New Installation</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="door_repair" value="yes" id="repair">
+                            <label for="repair">Repair</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="door_fabrication" value="yes" id="fabrication">
+                            <label for="fabrication">Custom Fabrication</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="door_replacement" value="yes" id="replacement">
+                            <label for="replacement">Replacement</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Number of Doors/Frames</label>
+                        <input type="text" name="quantity" placeholder="e.g., 5 doors, 3 frames">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Fire Rating Required?</label>
+                        <select name="fire_rating">
+                            <option value="">-- Select --</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="not_sure">Not Sure</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Project Details -->
+                <div class="section-title">Project Details</div>
+                
+                <div class="form-group">
+                    <label>Project Type</label>
+                    <select name="project_type">
+                        <option value="">-- Select Project Type --</option>
+                        <option value="commercial">Commercial Building</option>
+                        <option value="industrial">Industrial Facility</option>
+                        <option value="institutional">Institutional (School, Hospital, etc.)</option>
+                        <option value="government">Government/Municipal</option>
+                        <option value="emergency">Emergency Repair</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Timeline</label>
+                        <select name="timeline">
+                            <option value="">-- Select Timeline --</option>
+                            <option value="emergency">Emergency (ASAP)</option>
+                            <option value="1_week">Within 1 Week</option>
+                            <option value="2_4_weeks">2-4 Weeks</option>
+                            <option value="1_3_months">1-3 Months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Budget Range (Optional)</label>
+                        <select name="budget">
+                            <option value="">-- Select Budget --</option>
+                            <option value="under_5k">Under $5,000</option>
+                            <option value="5k_10k">$5,000 - $10,000</option>
+                            <option value="10k_25k">$10,000 - $25,000</option>
+                            <option value="25k_50k">$25,000 - $50,000</option>
+                            <option value="over_50k">Over $50,000</option>
+                            <option value="not_sure">Not Sure</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Project Description <span class="required">*</span></label>
+                    <textarea name="description" required placeholder="Please provide details about your project, including dimensions, specifications, or any special requirements..."></textarea>
+                    <p class="info-text">Include any relevant details about your welding or door/frame needs</p>
+                </div>
+
+                <div class="form-group">
+                    <label>How did you hear about us?</label>
+                    <select name="referral_source">
                         <option value="">-- Select --</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                        <option value="not_sure">Not Sure</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Project Details -->
-            <div class="section-title">Project Details</div>
-            
-            <div class="form-group">
-                <label>Project Type</label>
-                <select name="project_type">
-                    <option value="">-- Select Project Type --</option>
-                    <option value="commercial">Commercial Building</option>
-                    <option value="industrial">Industrial Facility</option>
-                    <option value="institutional">Institutional (School, Hospital, etc.)</option>
-                    <option value="government">Government/Municipal</option>
-                    <option value="emergency">Emergency Repair</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Timeline</label>
-                    <select name="timeline">
-                        <option value="">-- Select Timeline --</option>
-                        <option value="emergency">Emergency (ASAP)</option>
-                        <option value="1_week">Within 1 Week</option>
-                        <option value="2_4_weeks">2-4 Weeks</option>
-                        <option value="1_3_months">1-3 Months</option>
-                        <option value="flexible">Flexible</option>
+                        <option value="google">Google Search</option>
+                        <option value="referral">Referral</option>
+                        <option value="previous_client">Previous Client</option>
+                        <option value="social_media">Social Media</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
 
-                <div class="form-group">
-                    <label>Budget Range (Optional)</label>
-                    <select name="budget">
-                        <option value="">-- Select Budget --</option>
-                        <option value="under_5k">Under $5,000</option>
-                        <option value="5k_10k">$5,000 - $10,000</option>
-                        <option value="10k_25k">$10,000 - $25,000</option>
-                        <option value="25k_50k">$25,000 - $50,000</option>
-                        <option value="over_50k">Over $50,000</option>
-                        <option value="not_sure">Not Sure</option>
-                    </select>
-                </div>
-            </div>
+                <!-- Honeypot for spam protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-            <div class="form-group">
-                <label>Project Description <span class="required">*</span></label>
-                <textarea name="description" required placeholder="Please provide details about your project, including dimensions, specifications, or any special requirements..."></textarea>
-                <p class="info-text">Include any relevant details about your welding or door/frame needs</p>
-            </div>
-
-            <div class="form-group">
-                <label>How did you hear about us?</label>
-                <select name="referral_source">
-                    <option value="">-- Select --</option>
-                    <option value="google">Google Search</option>
-                    <option value="referral">Referral</option>
-                    <option value="previous_client">Previous Client</option>
-                    <option value="social_media">Social Media</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-
-            <!-- Honeypot for spam protection -->
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-            <button type="submit" class="submit-btn" id="submitBtn">Submit Request</button>
-        </form>
+                <button type="submit" class="submit-btn" id="submitBtn">Submit Request</button>
+            </form>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Coal Tech LLC</strong></p>
+        <p>📞 <a href="tel:2533358622">253-335-8622</a></p>
+        <p>Serving Washington State</p>
+        <p class="disclosure">Coalescent Technologies LLC DBA Coal Tech LLC</p>
+    </footer>
 
     <script>
         const form = document.getElementById('quoteForm');
