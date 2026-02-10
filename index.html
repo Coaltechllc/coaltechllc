@@ -283,23 +283,21 @@
     <a href="tel:2533358622" class="cta">Call 253-335-8622</a>
   </div>
 </section>
-<section class="yelp-reviews-section">
+<section class="testimonials">
+  <h2>What Our Commercial Clients Say</h2>
+  <p style="margin-bottom: 25px;">
+    Real feedback from contractors and facility managers across Washington State.
+  </p>
+  <section class="yelp-reviews-section">
   <h2>What Our Customers Say</h2>
-  <div class="reviews-rating">
-    <div class="stars-large">★★★★★</div>
-    <p class="rating-text">Based on Customer Reviews</p>
-  </div>
+  <p class="reviews-subtitle">Real feedback from commercial clients across Washington State.</p>
   
   <div class="review-container">
     <!-- Review 1: Kate T. -->
     <div class="review-card">
-      <div class="review-header">
-        <div>
-          <div class="stars">★★★★★</div>
-          <span class="reviewer-info">Kate T. - Olympia, WA</span>
-        </div>
-        <span class="review-date">Feb 9, 2026</span>
-      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-date">Feb 9, 2026</p>
+      <h3 class="reviewer-name">Kate T. - Olympia, WA</h3>
       
       <p class="review-text">
         "Reliable partner for our manufacturing facility located in the Pacific Northwest region 1. We've been using CoalTech for ongoing welding and fabrication work at our plant for over a year now. Their welders are knowledgeable, professional, friendly and understand industrial specs. They've handled everything from equipment repairs to custom steel fixtures. Fast response times and quality work every time. Highly recommend for any industrial welding needs."
@@ -308,13 +306,9 @@
 
     <!-- Review 2: Kristine T. -->
     <div class="review-card">
-      <div class="review-header">
-        <div>
-          <div class="stars">★★★★★</div>
-          <span class="reviewer-info">Kristine T. - San Francisco, CA</span>
-        </div>
-        <span class="review-date">Feb 8, 2026</span>
-      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-date">Feb 8, 2026</p>
+      <h3 class="reviewer-name">Kristine T. - San Francisco, CA</h3>
       
       <p class="review-text">
         "Expert hollow metal door frame repair! One of our warehouse door frames was damaged by a forklift and the door wouldn't close properly anymore. CoalTech came out and assessed the damage - they were able to repair and reinforce the frame on-site instead of replacing the whole thing, which saved us a lot of money and downtime. The repair is solid and the door operates perfectly now. Their welder knew exactly what he was doing with hollow metal. Great service for our facility!"
@@ -323,176 +317,150 @@
 
     <!-- Review 3: Karen K. -->
     <div class="review-card">
-      <div class="review-header">
-        <div>
-          <div class="stars">★★★★★</div>
-          <span class="reviewer-info">Karen K. - Lacey, WA</span>
-        </div>
-        <span class="review-date">Feb 4, 2026</span>
-      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="review-date">Feb 4, 2026</p>
+      <h3 class="reviewer-name">Karen K. - Lacey, WA</h3>
       
       <p class="review-text">
         "We hired Coal Tech LLC for commercial door and frame welding repairs, and the experience was outstanding. Communication was clear, pricing was fair, and the workmanship was top-notch. They showed up on time, worked efficiently, and delivered exactly what was promised. It's hard to find dependable welders--this company is one you can trust."
       </p>
     </div>
 
-    <!-- Yelp CTA -->
+    <!-- Yelp Link -->
     <div class="yelp-cta">
       <a href="https://www.yelp.com/biz/coal-tech-llc-federal-way-3" 
          target="_blank" 
          rel="noopener noreferrer"
-         class="yelp-button">
-        <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/6c2b5a26bde2/assets/img/brand_guidelines/yelp_fullcolor.png" 
-             alt="Yelp" 
-             class="yelp-logo">
-        <span>See More Reviews on Yelp</span>
+         class="yelp-link">
+        See More Reviews on Yelp →
       </a>
     </div>
   </div>
 </section>
 
 <style>
+/* Reviews Section - Matches CoalTech site style */
 .yelp-reviews-section {
   padding: 60px 20px;
-  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+  background-color: #f5f5f5;
+  text-align: center;
 }
 
 .yelp-reviews-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 32px;
   color: #333;
-  font-size: 36px;
-}
-
-.reviews-rating {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.stars-large {
-  color: #ffc107;
-  font-size: 40px;
-  letter-spacing: 5px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.rating-text {
+.reviews-subtitle {
   color: #666;
   font-size: 16px;
-  margin: 0;
+  margin-bottom: 40px;
 }
 
 .review-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .review-card {
   background: white;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  border-left: 5px solid #d32323;
-  margin-bottom: 25px;
-}
-
-.review-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 20px;
-  flex-wrap: wrap;
-  gap: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
 .stars {
-  color: #ffc107;
   font-size: 20px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
-
-.reviewer-info {
-  font-weight: 600;
-  color: #333;
-  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .review-date {
-  color: #666;
   font-size: 14px;
-  white-space: nowrap;
+  color: #999;
+  margin: 0 0 10px 0;
+}
+
+.reviewer-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 15px 0;
 }
 
 .review-text {
   font-size: 16px;
-  line-height: 1.7;
-  color: #333;
+  line-height: 1.6;
+  color: #555;
   margin: 0;
-  font-style: italic;
 }
 
 .yelp-cta {
+  margin-top: 30px;
   text-align: center;
-  margin-top: 40px;
 }
 
-.yelp-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 15px 35px;
-  background: white;
-  border: 2px solid #d32323;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #d32323;
-  font-weight: bold;
-  font-size: 18px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.yelp-button:hover {
-  background: #d32323;
+.yelp-link {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #d32323;
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(211, 35, 35, 0.3);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.yelp-logo {
-  width: 70px;
-  height: auto;
+.yelp-link:hover {
+  background-color: #b01d1d;
 }
 
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .yelp-reviews-section h2 {
-    font-size: 28px;
-  }
-  
-  .stars-large {
-    font-size: 32px;
+    font-size: 26px;
   }
   
   .review-card {
     padding: 20px;
   }
   
+  .reviewer-name {
+    font-size: 16px;
+  }
+  
   .review-text {
     font-size: 15px;
   }
+}
+
+@media (max-width: 480px) {
+  .yelp-reviews-section {
+    padding: 40px 15px;
+  }
   
-  .review-header {
-    flex-direction: column;
+  .yelp-reviews-section h2 {
+    font-size: 24px;
+  }
+  
+  .review-card {
+    padding: 15px;
+  }
+  
+  .stars {
+    font-size: 18px;
+  }
+  
+  .review-text {
+    font-size: 14px;
   }
 }
 </style>
-<section class="testimonials">
-  <h2>What Our Commercial Clients Say</h2>
-  <p style="margin-bottom: 25px;">
-    Real feedback from contractors and facility managers across Washington State.
-  </p>
-  <a href="/testimonials.html" class="cta">Read All Testimonials</a>
+  <a href="/testimonials.html" class="cta">Read more Testimonials</a>
 </section>
 <section class="gallery-section">
   <h2>Recent Commercial Welding Projects</h2>
