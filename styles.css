@@ -1116,16 +1116,18 @@ footer a:hover {
 
 .mfr-spotlight-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
   margin-bottom: 48px;
 }
 
 .mfr-spotlight-card {
   background: #111;
   border-top: 3px solid #c9a14a;
-  padding: 28px 24px;
+  padding: 20px 18px 22px;
   transition: background 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .mfr-spotlight-card:hover {
@@ -1137,12 +1139,19 @@ footer a:hover {
   background: #c9a14a;
   color: #000;
   font-family: 'Barlow Condensed', Arial, sans-serif;
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 3px 8px;
-  margin-bottom: 12px;
+  padding: 3px 7px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  line-height: 1.4;
+}
+
+.mfr-badge.mfr-badge-green {
+  background: #4a7a4a;
+  color: #fff;
 }
 
 .mfr-brand {
@@ -1296,10 +1305,17 @@ footer a:hover {
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+  .mfr-spotlight-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+  }
+}
+
 @media (max-width: 768px) {
   .mfr-spotlight-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
   .mfr-grid {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -1314,11 +1330,15 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+  .mfr-spotlight-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
   .mfr-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .mfr-spotlight-card {
-    padding: 20px 16px;
+    padding: 16px 14px;
   }
   .mfr-section-wrapper {
     padding: 30px 15px !important;
