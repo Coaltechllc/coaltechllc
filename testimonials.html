@@ -1,3 +1,7 @@
+
+Testimonials · HTML
+Copy
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,6 @@
   <link rel="stylesheet" href="../styles.css">
 
   <meta name="description" content="Read what our commercial clients say about Coal Tech LLC welding services. Real testimonials from contractors, property managers, and facility managers across Washington State.">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://coaltechllc.com/testimonials.html">
@@ -19,20 +22,174 @@
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
-      "reviewCount": "8"
-    }
+      "reviewCount": "13"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Eric Mijares" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "I highly recommend Coal Tech LLC. Quality and service are exceptional. I contracted Coal Tech LLC, through the company I was working for at the time, to do on-site modifications, damage repairs done by other trades on Hollow Metal Doors and Frames.",
+        "datePublished": "2026-02-24"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Best Damn Door Installer" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "We've had Justin, the owner of Coal Tech LLC, do welding repairs for us on hollow metal doors and frames, and he's done a great job. His work is solid, clean, and done the right way. He takes pride in what he does and communicates well.",
+        "datePublished": "2026-02-24"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Jonathan Lee" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "Coal Tech came out with their mobile setup, and was able to help weld parts of my personal project. They were prompt, walked me through the process, and offered a great price as well.",
+        "datePublished": "2026-02-24"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Bryant Cann" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "I don't normally write reviews, But I have to admit these guys do damn good work! Giving you a great time line, or just being honest! The work is amazing and im a happy customer!",
+        "datePublished": "2026-02-24"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Scott Simonsen" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "I had Coal Tech come out and weld a custom stainless steel fabrication project. Great price, quality was fantastic & communication was on point. Highly recommend.",
+        "datePublished": "2026-02-24"
+      }
+    ]
   }
   </script>
 
   <style>
+    /* ── SECTION INTRO ── */
+    .section-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+    .section-intro p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* ── RATING SUMMARY BAR ── */
+    .rating-summary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background: #0d0d0d;
+      border: 1px solid #222;
+      border-top: 4px solid #c9a14a;
+      border-radius: 6px;
+      padding: 30px 40px;
+      max-width: 600px;
+      margin: 0 auto 50px;
+      flex-wrap: wrap;
+    }
+    .rating-big {
+      text-align: center;
+    }
+    .rating-big .number {
+      font-size: 56px;
+      font-weight: 700;
+      color: #c9a14a;
+      line-height: 1;
+    }
+    .rating-big .stars-large {
+      color: #c9a14a;
+      font-size: 22px;
+      letter-spacing: 2px;
+      margin: 6px 0 4px;
+    }
+    .rating-big .label {
+      font-size: 12px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .rating-divider {
+      width: 1px;
+      height: 70px;
+      background: #333;
+    }
+    .rating-sources {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .source-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 4px;
+      padding: 8px 14px;
+      font-size: 13px;
+      color: #ddd;
+    }
+    .source-badge .g-icon {
+      font-size: 15px;
+      font-weight: 700;
+      color: #4285F4;
+      font-family: 'Google Sans', sans-serif;
+    }
+    .source-badge .y-icon {
+      color: #FF1A1A;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .source-badge .stars-sm {
+      color: #c9a14a;
+      font-size: 12px;
+    }
+
+    /* ── SECTION LABELS ── */
+    .reviews-section-label {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 50px auto 25px;
+      max-width: 1100px;
+    }
+    .reviews-section-label .label-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-left: 4px solid #c9a14a;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #c9a14a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+    .reviews-section-label .label-line {
+      flex: 1;
+      height: 1px;
+      background: #222;
+    }
+
+    /* ── GRID ── */
     .testimonials-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 25px;
-      margin: 30px auto;
+      margin: 0 auto 30px;
       max-width: 1100px;
     }
 
+    /* ── CARD BASE ── */
     .testimonial-box {
       background: #0d0d0d;
       padding: 25px;
@@ -40,8 +197,40 @@
       border-radius: 4px;
       display: flex;
       flex-direction: column;
+      position: relative;
     }
 
+    /* ── GOOGLE VERIFIED CARD ── */
+    .testimonial-box.google-verified {
+      border-left: 4px solid #4285F4;
+      background: #0a0d12;
+    }
+    .google-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #111d2e;
+      border: 1px solid #1a3050;
+      border-radius: 3px;
+      padding: 3px 8px;
+      font-size: 11px;
+      color: #7ab3f5;
+      font-weight: 600;
+    }
+    .google-badge .g-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4285F4;
+    }
+    .testimonial-box.google-verified .stars {
+      color: #fbbc04;
+    }
+
+    /* ── QUOTE TEXT ── */
     .testimonial-quote {
       font-style: italic;
       font-size: 15px;
@@ -49,27 +238,31 @@
       margin-bottom: 20px;
       flex-grow: 1;
       color: #f5f5f5;
+      padding-right: 60px;
     }
 
+    /* ── AUTHOR ── */
     .testimonial-author {
       border-top: 1px solid #222;
       padding-top: 15px;
     }
-
     .testimonial-author strong {
       color: #c9a14a;
       display: block;
       margin-bottom: 3px;
     }
-
-    .testimonial-author .title {
-      font-size: 13px;
-      color: #aaa;
+    .testimonial-box.google-verified .testimonial-author strong {
+      color: #7ab3f5;
     }
-
+    .testimonial-author .title,
     .testimonial-author .location {
       font-size: 13px;
       color: #aaa;
+    }
+    .testimonial-author .date {
+      font-size: 12px;
+      color: #666;
+      margin-top: 3px;
     }
 
     .stars {
@@ -78,22 +271,70 @@
       margin-bottom: 10px;
     }
 
+    /* ── CTA SECTION ── */
+    .leave-review-cta {
+      background: #0d0d0d;
+      border: 1px solid #222;
+      border-top: 4px solid #4285F4;
+      border-radius: 6px;
+      padding: 30px;
+      text-align: center;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+    .leave-review-cta h3 {
+      color: #c9a14a;
+      margin-bottom: 10px;
+    }
+    .leave-review-cta p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .btn-google-review {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #4285F4;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-google-review:hover {
+      background: #2a6dd9;
+    }
+
+    /* ── WHY CHOOSE ── */
+    .why-grid {
+      max-width: 1100px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .why-card {
+      background: #111;
+      padding: 20px;
+      border-left: 4px solid #c9a14a;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .why-card .icon { font-size: 28px; color: #c9a14a; margin-bottom: 10px; }
+    .why-card strong { color: #c9a14a; display: block; margin-bottom: 8px; }
+    .why-card p { font-size: 13px; color: #aaa; margin: 0; }
+
     @media (max-width: 768px) {
-      .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .testimonial-box {
-        padding: 20px;
-      }
-
-      .testimonial-quote {
-        font-size: 14px;
-      }
+      .testimonials-grid { grid-template-columns: 1fr; gap: 20px; }
+      .testimonial-box { padding: 20px; }
+      .testimonial-quote { font-size: 14px; padding-right: 50px; }
+      .rating-summary { padding: 20px; gap: 20px; }
+      .rating-divider { display: none; }
     }
   </style>
-
 </head>
 
 <body>
@@ -118,13 +359,148 @@
 </header>
 
 <section>
-  <h2>Real Reviews from Washington State Contractors & Facility Managers</h2>
-  <p>
-    Our clients trust us for professional welding services, reliable communication, and quality workmanship. Here's what they have to say:
-  </p>
+
+  <div class="section-intro">
+    <h2>Real Reviews from Contractors & Commercial Clients Across Washington State</h2>
+    <p>Our clients trust us for professional welding services, reliable communication, and quality workmanship. Here's what they have to say.</p>
+  </div>
+
+  <!-- Rating Summary -->
+  <div class="rating-summary">
+    <div class="rating-big">
+      <div class="number">5.0</div>
+      <div class="stars-large">★★★★★</div>
+      <div class="label">Overall Rating</div>
+    </div>
+    <div class="rating-divider"></div>
+    <div class="rating-sources">
+      <div class="source-badge">
+        <span class="g-icon">G</span>
+        <span class="stars-sm">★★★★★</span>
+        <span>5.0 · 5 Google Reviews</span>
+      </div>
+      <div class="source-badge">
+        <span class="y-icon">Y</span>
+        <span class="stars-sm">★★★★★</span>
+        <span>5.0 · 8 Client Reviews</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GOOGLE REVIEWS ── -->
+  <div class="reviews-section-label">
+    <div class="label-badge"><span class="g-icon" style="color:#4285F4;font-weight:700;">G</span> Verified Google Reviews</div>
+    <div class="label-line"></div>
+  </div>
 
   <div class="testimonials-grid">
-    
+
+    <div class="testimonial-box google-verified">
+      <div class="google-badge"><span class="g-dot"></span> Google Review</div>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "I highly recommend Coal Tech LLC. Quality and service are exceptional. I contracted Coal Tech LLC, through the company I was working for at the time, to do on-site modifications and damage repairs done by other trades on Hollow Metal Doors and Frames. Highly recommend for any commercial hollow metal work."
+      </p>
+      <div class="testimonial-author">
+        <strong>Eric Mijares</strong>
+        <div class="title">Local Guide · 27 Reviews</div>
+        <div class="date">February 2026</div>
+      </div>
+    </div>
+
+    <div class="testimonial-box google-verified">
+      <div class="google-badge"><span class="g-dot"></span> Google Review</div>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "We've had Justin, the owner of Coal Tech LLC, do welding repairs for us on hollow metal doors and frames, and he's done a great job. His work is solid, clean, and done the right way. He takes pride in what he does and communicates well."
+      </p>
+      <div class="testimonial-author">
+        <strong>Best Damn Door Installer</strong>
+        <div class="title">Door Installation Contractor</div>
+        <div class="date">February 2026</div>
+      </div>
+    </div>
+
+    <div class="testimonial-box google-verified">
+      <div class="google-badge"><span class="g-dot"></span> Google Review</div>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "Coal Tech came out with their mobile setup and was able to help weld parts of my project. They were prompt, walked me through the process, and offered a great price as well. I would 100% recommend Coal Tech's welding services."
+      </p>
+      <div class="testimonial-author">
+        <strong>Jonathan Lee</strong>
+        <div class="date">February 2026</div>
+      </div>
+    </div>
+
+    <div class="testimonial-box google-verified">
+      <div class="google-badge"><span class="g-dot"></span> Google Review</div>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "I don't normally write reviews, but I have to admit these guys do damn good work! Giving you a great timeline, or just being honest — the work is amazing and I'm a happy customer! Thanks Coal Tech!"
+      </p>
+      <div class="testimonial-author">
+        <strong>Bryant Cann</strong>
+        <div class="date">February 2026</div>
+      </div>
+    </div>
+
+    <div class="testimonial-box google-verified">
+      <div class="google-badge"><span class="g-dot"></span> Google Review</div>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "I had Coal Tech come out and weld a custom stainless steel fabrication project. Great price, quality was fantastic and communication was on point. Highly recommend."
+      </p>
+      <div class="testimonial-author">
+        <strong>Scott Simonsen</strong>
+        <div class="title">Local Guide · 10 Reviews</div>
+        <div class="date">February 2026</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── CLIENT REVIEWS ── -->
+  <div class="reviews-section-label">
+    <div class="label-badge">⭐ Client Reviews</div>
+    <div class="label-line"></div>
+  </div>
+
+  <div class="testimonials-grid">
+
+    <div class="testimonial-box">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "Reliable partner for our manufacturing facility located in the Pacific Northwest. We've been using Coal Tech for ongoing welding and fabrication work at our plant for over a year now. Their welders are knowledgeable, professional, and understand industrial specs. Fast response times and quality work every time."
+      </p>
+      <div class="testimonial-author">
+        <strong>Kate T.</strong>
+        <div class="location">Manufacturing Facility · Tacoma, WA</div>
+      </div>
+    </div>
+
+    <div class="testimonial-box">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "Expert hollow metal door frame repair! One of our warehouse door frames was damaged by a forklift and the door wouldn't close properly. Coal Tech came out, assessed the damage, and repaired the frame on-site instead of replacing it — saving us money and downtime. The repair is solid and the door operates perfectly."
+      </p>
+      <div class="testimonial-author">
+        <strong>Kristine T.</strong>
+        <div class="location">Warehouse Facility Manager · Seattle, WA</div>
+      </div>
+    </div>
+
+    <div class="testimonial-box">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "We hired Coal Tech LLC for commercial door and frame welding repairs, and the experience was outstanding. Communication was clear, pricing was fair, and the workmanship was top-notch. They showed up on time, worked efficiently, and delivered exactly what was promised."
+      </p>
+      <div class="testimonial-author">
+        <strong>Karen K.</strong>
+        <div class="location">Commercial Client · Lacey, WA</div>
+      </div>
+    </div>
+
     <div class="testimonial-box">
       <div class="stars">★★★★★</div>
       <p class="testimonial-quote">
@@ -172,17 +548,6 @@
     <div class="testimonial-box">
       <div class="stars">★★★★★</div>
       <p class="testimonial-quote">
-        "Friendly, skilled, and efficient. Our warehouse doors are now operating flawlessly thanks to Coal Tech LLC."
-      </p>
-      <div class="testimonial-author">
-        <strong>CEO</strong>
-        <div class="location">Puyallup, WA</div>
-      </div>
-    </div>
-
-    <div class="testimonial-box">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-quote">
         "Coal Tech LLC provided exceptional service! Their responsiveness and quality of work were impressive. Highly recommend!"
       </p>
       <div class="testimonial-author">
@@ -191,65 +556,50 @@
       </div>
     </div>
 
-    <div class="testimonial-box">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-quote">
-        "Quick, quality welding solutions!"
-      </p>
-      <div class="testimonial-author">
-        <strong>Facilities Manager</strong>
-        <div class="location">Bremerton, WA</div>
-      </div>
-    </div>
-
-    <div class="testimonial-box">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-quote">
-        "Professional and reliable welding services that exceeded our expectations."
-      </p>
-      <div class="testimonial-author">
-        <strong>Operations Manager</strong>
-        <div class="location">Olympia, WA</div>
-      </div>
-    </div>
-
   </div>
+
+  <!-- Leave a Review CTA -->
+  <div class="leave-review-cta">
+    <h3>Had a Great Experience With Us?</h3>
+    <p>Your review helps other contractors and facility managers find Coal Tech LLC when they need reliable commercial welding services.</p>
+    <a href="https://maps.app.goo.gl/AtFSrxdBroxWBDsd6" target="_blank" rel="noopener" class="btn-google-review">
+      <span style="font-weight:700;font-size:16px;">G</span> Leave Us a Google Review
+    </a>
+  </div>
+
 </section>
 
 <section class="section-alt">
   <h2>Why Clients Choose Coal Tech LLC</h2>
-  
-  <div style="max-width: 1100px; margin: 30px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-    <div style="background: #111; padding: 20px; border-left: 4px solid #c9a14a; border-radius: 4px; text-align: center;">
-      <div style="font-size: 28px; color: #c9a14a; margin-bottom: 10px;">✓</div>
-      <strong style="color: #c9a14a; display: block; margin-bottom: 8px;">Quality Work</strong>
-      <p style="font-size: 13px;">Professional craftsmanship on every project</p>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="icon">✓</div>
+      <strong>Quality Work</strong>
+      <p>Professional craftsmanship on every project</p>
     </div>
-    <div style="background: #111; padding: 20px; border-left: 4px solid #c9a14a; border-radius: 4px; text-align: center;">
-      <div style="font-size: 28px; color: #c9a14a; margin-bottom: 10px;">⚡</div>
-      <strong style="color: #c9a14a; display: block; margin-bottom: 8px;">Fast Response</strong>
-      <p style="font-size: 13px;">Same-day emergency service available</p>
+    <div class="why-card">
+      <div class="icon">⚡</div>
+      <strong>Fast Response</strong>
+      <p>Same-day emergency service available</p>
     </div>
-    <div style="background: #111; padding: 20px; border-left: 4px solid #c9a14a; border-radius: 4px; text-align: center;">
-      <div style="font-size: 28px; color: #c9a14a; margin-bottom: 10px;">📱</div>
-      <strong style="color: #c9a14a; display: block; margin-bottom: 8px;">Communication</strong>
-      <p style="font-size: 13px;">Reliable updates and professional coordination</p>
+    <div class="why-card">
+      <div class="icon">📱</div>
+      <strong>Communication</strong>
+      <p>Reliable updates and professional coordination</p>
     </div>
-    <div style="background: #111; padding: 20px; border-left: 4px solid #c9a14a; border-radius: 4px; text-align: center;">
-      <div style="font-size: 28px; color: #c9a14a; margin-bottom: 10px;">🛡️</div>
-      <strong style="color: #c9a14a; display: block; margin-bottom: 8px;">Licensed & Insured</strong>
-      <p style="font-size: 13px;">Full compliance and protection</p>
+    <div class="why-card">
+      <div class="icon">🛡️</div>
+      <strong>Licensed & Insured</strong>
+      <p>Full compliance and protection on every job</p>
     </div>
   </div>
 </section>
 
 <section>
   <h2>Ready to Experience the Coal Tech LLC Difference?</h2>
-  <p>
-    Join the contractors and facility managers who trust Coal Tech LLC for professional welding services throughout Washington State.
-  </p>
+  <p>Join the contractors and facility managers who trust Coal Tech LLC for professional welding services throughout Washington State.</p>
   <div style="text-align: center; margin-top: 30px;">
-    <a href="/contact.html" class="cta">Get Started</a>
+    <a href="/contact.html" class="cta">Get a Quote</a>
     <a href="tel:2533358622" class="cta">Call 253-335-8622</a>
   </div>
 </section>
@@ -260,7 +610,6 @@
   <span>📧 <a href="mailto:info@coaltechllc.com" style="color: #aaa;">info@coaltechllc.com</a></span>
   <span>Serving Washington State</span>
   <span>Coalescent Technologies LLC DBA Coal Tech LLC</span>
-
   <p class="disclosure">
     Coal Tech LLC is licensed and based in Washington State.
     Services outside Washington are provided only when subcontracted
@@ -270,5 +619,4 @@
 </footer>
 
 </body>
-
 </html>
