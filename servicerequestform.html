@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabrication Service Request - Coal Tech LLC</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fabrication Service Request - Coal Tech LLC</title>
+<style>
         /* =========================
            RESET & BASE
         ========================= */
@@ -483,272 +484,241 @@
             scroll-behavior: smooth;
         }
     </style>
-</head>
+<meta content="Request commercial welding services from Coal Tech LLC across Washington State. Fill out our service request form or call 253-335-8622 for a fast response." name="description"/></head>
 <body>
-    <!-- Navigation -->
-    <nav class="main-nav">
-    <a href="/">HOME</a>
-  <a href="/service-areas/washington/">WA SERVICE AREAS</a>
-  <a href="/training/">TRAINING FOR EMPLOYERS</a>
-  <a href="/contractors/">Contractors</a>
-  <a href="/subcontracting.html">SUBCONTRACTING</a>
-  <a href="/emergency-welding.html">EMERGENCY WELDING</a>
-  <a href="/hollow-metal-fabrication.html">HOLLOW METAL FABRICATION</a>
+<!-- Navigation -->
+<nav class="main-nav">
+<a href="/">HOME</a>
+<a href="/service-areas/washington/">WA SERVICE AREAS</a>
+<a href="/training/">TRAINING FOR EMPLOYERS</a>
+<a href="/contractors/">Contractors</a>
+<a href="/subcontracting.html">SUBCONTRACTING</a>
+<a href="/emergency-welding.html">EMERGENCY WELDING</a>
+<a href="/hollow-metal-fabrication.html">HOLLOW METAL FABRICATION</a>
 <a href="/testimonials.html">TESTIMONIALS</a>
-  <a href="/contact.html">Contact</a>
-   <a href="/faq.html">FAQ</a>
-  <a href="/servicerequestform.html">Service Request</a>
-  <a href="tel:2533358622">📞 253-335-8622</a>
-    </nav>
-
-    <!-- Form -->
-    <div class="form-wrapper">
-        <div class="form-container">
-            <div class="form-header">
-                <h1>Fabrication Service Request</h1>
-                <p>Welding & Hollow Metal Door/Frame Services</p>
-            </div>
-
-            <div id="successMessage" class="message success-message">
+<a href="/contact.html">Contact</a>
+<a href="/faq.html">FAQ</a>
+<a href="/servicerequestform.html">Service Request</a>
+<a href="tel:2533358622">📞 253-335-8622</a>
+</nav>
+<!-- Form -->
+<div class="form-wrapper">
+<div class="form-container">
+<div class="form-header">
+<h1>Fabrication Service Request</h1>
+<p>Welding &amp; Hollow Metal Door/Frame Services</p>
+</div>
+<div class="message success-message" id="successMessage">
                 Thank you! Your request has been submitted. We'll contact you within 24-48 hours.
             </div>
-
-            <div id="errorMessage" class="message error-message">
+<div class="message error-message" id="errorMessage">
                 Sorry, there was an error submitting your form. Please try again or contact us directly at 253-335-8622.
             </div>
-
-            <!-- Web3Forms -->
-            <form action="https://api.web3forms.com/submit" method="POST" id="quoteForm">
-                
-                <!-- Replace with your Web3Forms access key -->
-                <input type="hidden" name="access_key" value="71ebdf9e-82a3-415d-9c89-8ec6015b86cd">
-                
-                <!-- Contact Information -->
-                <div class="section-title">Contact Information</div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Full Name <span class="required">*</span></label>
-                        <input type="text" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Company Name <span class="required">*</span></label>
-                        <input type="text" name="company" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Email <span class="required">*</span></label>
-                        <input type="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Phone Number <span class="required">*</span></label>
-                        <input type="tel" name="phone" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Project Location/Address <span class="required">*</span></label>
-                    <input type="text" name="location" required>
-                </div>
-
-                <!-- Service Type -->
-                <div class="section-title">Service Type</div>
-                
-                <div class="form-group">
-                    <label>What service do you need? <span class="required">*</span></label>
-                    <select name="service_type" required>
-                        <option value="">-- Select a Service --</option>
-                        <option value="welding">Welding Services</option>
-                        <option value="hollow_metal">Hollow Metal Door & Frame</option>
-                        <option value="both">Both Services</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <!-- Welding Services -->
-                <div class="section-title">Welding Services (if applicable)</div>
-                
-                <div class="form-group">
-                    <label>Type of Welding Needed</label>
-                    <div class="checkbox-group">
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="welding_mig" value="yes" id="mig">
-                            <label for="mig">MIG Welding (GMAW)</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="welding_tig" value="yes" id="tig">
-                            <label for="tig">TIG Welding (GTAW)</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="welding_stick" value="yes" id="stick">
-                            <label for="stick">Stick Welding (SMAW)</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="welding_flux" value="yes" id="flux">
-                            <label for="flux">Flux-Core Welding (FCAW)</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="welding_structural" value="yes" id="structural">
-                            <label for="structural">Structural Welding</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="welding_pipe" value="yes" id="pipe">
-                            <label for="pipe">Pipe Welding</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="welding_consult" value="yes" id="not-sure-welding">
-                            <label for="not-sure-welding">Not Sure - Need Consultation</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Material Type</label>
-                    <select name="material_type">
-                        <option value="">-- Select Material --</option>
-                        <option value="carbon_steel">Carbon Steel</option>
-                        <option value="stainless_steel">Stainless Steel</option>
-                        <option value="aluminum">Aluminum</option>
-                        <option value="other">Other/Not Sure</option>
-                    </select>
-                </div>
-
-                <!-- Hollow Metal Door & Frame Services -->
-                <div class="section-title">Hollow Metal Door & Frame (if applicable)</div>
-                
-                <div class="form-group">
-                    <label>Service Needed</label>
-                    <div class="checkbox-group">
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="door_install" value="yes" id="install">
-                            <label for="install">New Installation</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="door_repair" value="yes" id="repair">
-                            <label for="repair">Repair</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="door_fabrication" value="yes" id="fabrication">
-                            <label for="fabrication">Custom Fabrication</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" name="door_replacement" value="yes" id="replacement">
-                            <label for="replacement">Replacement</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Number of Doors/Frames</label>
-                        <input type="text" name="quantity" placeholder="e.g., 5 doors, 3 frames">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Fire Rating Required?</label>
-                        <select name="fire_rating">
-                            <option value="">-- Select --</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                            <option value="not_sure">Not Sure</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Project Details -->
-                <div class="section-title">Project Details</div>
-                
-                <div class="form-group">
-                    <label>Project Type</label>
-                    <select name="project_type">
-                        <option value="">-- Select Project Type --</option>
-                        <option value="commercial">Commercial Building</option>
-                        <option value="industrial">Industrial Facility</option>
-                        <option value="institutional">Institutional (School, Hospital, etc.)</option>
-                        <option value="government">Government/Municipal</option>
-                        <option value="emergency">Emergency Repair</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Timeline</label>
-                        <select name="timeline">
-                            <option value="">-- Select Timeline --</option>
-                            <option value="emergency">Emergency (ASAP)</option>
-                            <option value="1_week">Within 1 Week</option>
-                            <option value="2_4_weeks">2-4 Weeks</option>
-                            <option value="1_3_months">1-3 Months</option>
-                            <option value="flexible">Flexible</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Budget Range (Optional)</label>
-                        <select name="budget">
-                            <option value="">-- Select Budget --</option>
-                            <option value="under_5k">Under $5,000</option>
-                            <option value="5k_10k">$5,000 - $10,000</option>
-                            <option value="10k_25k">$10,000 - $25,000</option>
-                            <option value="25k_50k">$25,000 - $50,000</option>
-                            <option value="over_50k">Over $50,000</option>
-                            <option value="not_sure">Not Sure</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Project Description <span class="required">*</span></label>
-                    <textarea name="description" required placeholder="Please provide details about your project, including dimensions, specifications, or any special requirements..."></textarea>
-                    <p class="info-text">Include any relevant details about your welding or door/frame needs</p>
-                </div>
-
-                <div class="form-group">
-                    <label>How did you hear about us?</label>
-                    <select name="referral_source">
-                        <option value="">-- Select --</option>
-                        <option value="google">Google Search</option>
-                        <option value="referral">Referral</option>
-                        <option value="previous_client">Previous Client</option>
-                        <option value="social_media">Social Media</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <!-- Honeypot for spam protection -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                <button type="submit" class="submit-btn" id="submitBtn">Submit Request</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-         <p>Coal Tech LLC</p>
-  <span>📞 253-335-8622</span>
-  <span>Serving Washington State</span>
-  <span>Coalescent Technologies LLC DBA Coal Tech LLC</span>
+<!-- Web3Forms -->
+<form action="https://api.web3forms.com/submit" id="quoteForm" method="POST">
+<!-- Replace with your Web3Forms access key -->
+<input name="access_key" type="hidden" value="71ebdf9e-82a3-415d-9c89-8ec6015b86cd"/>
+<!-- Contact Information -->
+<div class="section-title">Contact Information</div>
+<div class="form-row">
+<div class="form-group">
+<label>Full Name <span class="required">*</span></label>
+<input name="name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label>Company Name <span class="required">*</span></label>
+<input name="company" required="" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label>Email <span class="required">*</span></label>
+<input name="email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label>Phone Number <span class="required">*</span></label>
+<input name="phone" required="" type="tel"/>
+</div>
+</div>
+<div class="form-group">
+<label>Project Location/Address <span class="required">*</span></label>
+<input name="location" required="" type="text"/>
+</div>
+<!-- Service Type -->
+<div class="section-title">Service Type</div>
+<div class="form-group">
+<label>What service do you need? <span class="required">*</span></label>
+<select name="service_type" required="">
+<option value="">-- Select a Service --</option>
+<option value="welding">Welding Services</option>
+<option value="hollow_metal">Hollow Metal Door &amp; Frame</option>
+<option value="both">Both Services</option>
+<option value="other">Other</option>
+</select>
+</div>
+<!-- Welding Services -->
+<div class="section-title">Welding Services (if applicable)</div>
+<div class="form-group">
+<label>Type of Welding Needed</label>
+<div class="checkbox-group">
+<div class="checkbox-item">
+<input id="mig" name="welding_mig" type="checkbox" value="yes"/>
+<label for="mig">MIG Welding (GMAW)</label>
+</div>
+<div class="checkbox-item">
+<input id="tig" name="welding_tig" type="checkbox" value="yes"/>
+<label for="tig">TIG Welding (GTAW)</label>
+</div>
+<div class="checkbox-item">
+<input id="stick" name="welding_stick" type="checkbox" value="yes"/>
+<label for="stick">Stick Welding (SMAW)</label>
+</div>
+<div class="checkbox-item">
+<input id="flux" name="welding_flux" type="checkbox" value="yes"/>
+<label for="flux">Flux-Core Welding (FCAW)</label>
+</div>
+<div class="checkbox-item">
+<input id="structural" name="welding_structural" type="checkbox" value="yes"/>
+<label for="structural">Structural Welding</label>
+</div>
+<div class="checkbox-item">
+<input id="pipe" name="welding_pipe" type="checkbox" value="yes"/>
+<label for="pipe">Pipe Welding</label>
+</div>
+<div class="checkbox-item">
+<input id="not-sure-welding" name="welding_consult" type="checkbox" value="yes"/>
+<label for="not-sure-welding">Not Sure - Need Consultation</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label>Material Type</label>
+<select name="material_type">
+<option value="">-- Select Material --</option>
+<option value="carbon_steel">Carbon Steel</option>
+<option value="stainless_steel">Stainless Steel</option>
+<option value="aluminum">Aluminum</option>
+<option value="other">Other/Not Sure</option>
+</select>
+</div>
+<!-- Hollow Metal Door & Frame Services -->
+<div class="section-title">Hollow Metal Door &amp; Frame (if applicable)</div>
+<div class="form-group">
+<label>Service Needed</label>
+<div class="checkbox-group">
+<div class="checkbox-item">
+<input id="install" name="door_install" type="checkbox" value="yes"/>
+<label for="install">New Installation</label>
+</div>
+<div class="checkbox-item">
+<input id="repair" name="door_repair" type="checkbox" value="yes"/>
+<label for="repair">Repair</label>
+</div>
+<div class="checkbox-item">
+<input id="fabrication" name="door_fabrication" type="checkbox" value="yes"/>
+<label for="fabrication">Custom Fabrication</label>
+</div>
+<div class="checkbox-item">
+<input id="replacement" name="door_replacement" type="checkbox" value="yes"/>
+<label for="replacement">Replacement</label>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label>Number of Doors/Frames</label>
+<input name="quantity" placeholder="e.g., 5 doors, 3 frames" type="text"/>
+</div>
+<div class="form-group">
+<label>Fire Rating Required?</label>
+<select name="fire_rating">
+<option value="">-- Select --</option>
+<option value="yes">Yes</option>
+<option value="no">No</option>
+<option value="not_sure">Not Sure</option>
+</select>
+</div>
+</div>
+<!-- Project Details -->
+<div class="section-title">Project Details</div>
+<div class="form-group">
+<label>Project Type</label>
+<select name="project_type">
+<option value="">-- Select Project Type --</option>
+<option value="commercial">Commercial Building</option>
+<option value="industrial">Industrial Facility</option>
+<option value="institutional">Institutional (School, Hospital, etc.)</option>
+<option value="government">Government/Municipal</option>
+<option value="emergency">Emergency Repair</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label>Timeline</label>
+<select name="timeline">
+<option value="">-- Select Timeline --</option>
+<option value="emergency">Emergency (ASAP)</option>
+<option value="1_week">Within 1 Week</option>
+<option value="2_4_weeks">2-4 Weeks</option>
+<option value="1_3_months">1-3 Months</option>
+<option value="flexible">Flexible</option>
+</select>
+</div>
+<div class="form-group">
+<label>Budget Range (Optional)</label>
+<select name="budget">
+<option value="">-- Select Budget --</option>
+<option value="under_5k">Under $5,000</option>
+<option value="5k_10k">$5,000 - $10,000</option>
+<option value="10k_25k">$10,000 - $25,000</option>
+<option value="25k_50k">$25,000 - $50,000</option>
+<option value="over_50k">Over $50,000</option>
+<option value="not_sure">Not Sure</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label>Project Description <span class="required">*</span></label>
+<textarea name="description" placeholder="Please provide details about your project, including dimensions, specifications, or any special requirements..." required=""></textarea>
+<p class="info-text">Include any relevant details about your welding or door/frame needs</p>
+</div>
+<div class="form-group">
+<label>How did you hear about us?</label>
+<select name="referral_source">
+<option value="">-- Select --</option>
+<option value="google">Google Search</option>
+<option value="referral">Referral</option>
+<option value="previous_client">Previous Client</option>
+<option value="social_media">Social Media</option>
+<option value="other">Other</option>
+</select>
+</div>
+<!-- Honeypot for spam protection -->
+<input class="hidden" name="botcheck" style="display: none;" type="checkbox"/>
+<button class="submit-btn" id="submitBtn" type="submit">Submit Request</button>
+</form>
+</div>
+</div>
+<!-- Footer -->
+<footer>
+<p>Coal Tech LLC</p>
+<span>📞 253-335-8622</span>
+<span>Serving Washington State</span>
+<span>Coalescent Technologies LLC DBA Coal Tech LLC</span>
 <span>📧 <a href="mailto:info@coaltechllc.com">info@coaltechllc.com</a></span>
-
-  <p class="disclosure">
+<p class="disclosure">
     Coal Tech LLC is licensed and based in Washington State.
     Services outside Washington are provided only when subcontracted
     by a properly licensed commercial or industrial contractor.
   </p>
-  <p>We prioritize emergency service calls for rapid dispatch. 
+<p>We prioritize emergency service calls for rapid dispatch. 
   Final service completion timelines are subject to job-specific variables, 
   including material availability and site availability.</p>
-  <p>We prioritize safety, quality, and professionalism in every project we undertake.</p>
-  <p>© 2017 Coal Tech LLC. All rights reserved.</p>
-    </footer>
-
-    <script>
+<p>We prioritize safety, quality, and professionalism in every project we undertake.</p>
+<p>© 2017 Coal Tech LLC. All rights reserved.</p>
+</footer>
+<script>
         const form = document.getElementById('quoteForm');
         const submitBtn = document.getElementById('submitBtn');
         const successMessage = document.getElementById('successMessage');

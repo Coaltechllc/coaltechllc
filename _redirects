@@ -1,2 +1,8 @@
+# Redirect www to non-www
 https://www.coaltechllc.com/* https://coaltechllc.com/:splat 301!
+
+# Redirect /index.html to root to prevent duplicate indexing
 /index.html / 301!
+
+# Redirect www index.html directly
+https://www.coaltechllc.com/index.html https://coaltechllc.com/ 301!
