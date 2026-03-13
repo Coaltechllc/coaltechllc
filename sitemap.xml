@@ -1,205 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
   <!-- Homepage -->
   <url>
     <loc>https://coaltechllc.com/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Main Service Pages -->
+  <!-- Core Service Pages -->
   <url>
-    <loc>https://coaltechllc.com/hollow-metal-fabrication.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://coaltechllc.com/emergency-welding.html</loc>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://coaltechllc.com/training/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://coaltechllc.com/hollow-metal-fabrication.html</loc>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
 
   <url>
     <loc>https://coaltechllc.com/subcontracting.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/training/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contractor Pages -->
+  <url>
+    <loc>https://coaltechllc.com/contractors/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/contractors/general-contractors.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/contractors/property-management.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/contractors/industrial-maintenance.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/contractors/door-frame-contractors.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 
   <!-- Contact & Info Pages -->
   <url>
     <loc>https://coaltechllc.com/contact.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://coaltechllc.com/testimonials.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/faq.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://coaltechllc.com/servicerequestform.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 
   <!-- Service Areas Hub -->
   <url>
     <loc>https://coaltechllc.com/service-areas/washington/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Washington State City Pages -->
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/auburn.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/bellevue.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/chelan.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/cheney.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/everett.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/federal-way.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/grandview.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/kennewick.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/kent.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/lakewood.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/olympia.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/pasco.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/puyallup.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/renton.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/richland.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/seattle.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/spokane.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/spokane-valley.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/tacoma.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/vancouver.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://coaltechllc.com/service-areas/washington/yakima.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <!-- Washington City Pages -->
+  <url><loc>https://coaltechllc.com/service-areas/washington/federal-way.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/seattle.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/tacoma.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/bellevue.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/everett.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/olympia.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/spokane.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/kent.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/renton.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/auburn.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/puyallup.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/lakewood.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/kennewick.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/richland.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/pasco.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/yakima.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/spokane-valley.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/vancouver.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/chelan.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/cheney.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://coaltechllc.com/service-areas/washington/grandview.html</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
 
 </urlset>
