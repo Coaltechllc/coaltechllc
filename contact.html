@@ -239,15 +239,12 @@
 
 <nav class="main-nav">
   <a href="/">HOME</a>
-  <a href="/service-areas/washington/">WA SERVICE AREAS</a>
   <a href="/emergency-welding.html">EMERGENCY WELDING</a>
   <a href="/hollow-metal-fabrication.html">HOLLOW METAL DOORS</a>
+  <a href="/service-areas/washington/">SERVICE AREAS</a>
   <a href="/contractors/">CONTRACTORS</a>
-  <a href="/subcontracting.html">SUBCONTRACTING</a>
-  <a href="/training/">TRAINING</a>
   <a href="/testimonials.html">TESTIMONIALS</a>
   <a href="/faq.html">FAQ</a>
-  <a href="/contact.html">CONTACT</a>
   <a href="/servicerequestform.html">SERVICE REQUEST</a>
   <a href="tel:2533358622">📞 253-335-8622</a>
 </nav>
@@ -306,16 +303,29 @@
     </div>
 
     <div class="form-group">
-      <label for="service">Service Needed *</label>
-      <select id="service" name="service" required>
-        <option value="">-- Select a Service --</option>
-        <option value="Commercial Welding">Commercial Welding</option>
-        <option value="Emergency Welding">Emergency Welding</option>
-        <option value="Door & Frame Repair">Door & Frame Repair</option>
-        <option value="Workforce Training">Workforce Training</option>
-        <option value="Subcontracting Partnership">Subcontracting Partnership</option>
-        <option value="Other">Other Inquiry</option>
-      </select>
+      <label>Service Needed *</label>
+      <div class="service-type-buttons">
+        <button type="button" class="service-type-btn" onclick="selectService(this,'Emergency Welding')">
+          <span class="btn-icon">⚡</span>Emergency Welding
+        </button>
+        <button type="button" class="service-type-btn" onclick="selectService(this,'Door & Frame Repair')">
+          <span class="btn-icon">🚪</span>Door &amp; Frame Repair
+        </button>
+        <button type="button" class="service-type-btn" onclick="selectService(this,'Commercial Welding')">
+          <span class="btn-icon">🔧</span>Commercial Welding
+        </button>
+        <button type="button" class="service-type-btn" onclick="selectService(this,'Fabrication')">
+          <span class="btn-icon">🔩</span>Fabrication
+        </button>
+        <button type="button" class="service-type-btn" onclick="selectService(this,'Subcontracting Partnership')">
+          <span class="btn-icon">🤝</span>Subcontracting
+        </button>
+        <button type="button" class="service-type-btn" onclick="selectService(this,'Workforce Training')">
+          <span class="btn-icon">🎓</span>Training
+        </button>
+      </div>
+      <input type="hidden" id="service" name="service" required>
+      <p id="service-error" style="color:#c9a14a;font-size:12px;margin-top:6px;display:none;">Please select a service above.</p>
     </div>
 
     <div class="form-group">
@@ -373,19 +383,47 @@
 
 <footer>
   <p>Coal Tech LLC</p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/coaltechllc/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">📷</a>
+    <a href="https://www.facebook.com/coaltechllc/" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook">👥</a>
+    <a href="https://www.linkedin.com/company/coal-tech-llc" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">💼</a>
+    <a href="https://www.youtube.com/@coaltechllc" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube">▶️</a>
+  </div>
   <span>📞 253-335-8622</span>
-  <span>📧 <a href="mailto:info@coaltechllc.com" style="color: #aaa;">info@coaltechllc.com</a></span>
+  <span>📧 <a href="mailto:info@coaltechllc.com" style="color:#aaa;">info@coaltechllc.com</a></span>
+  <span style="color:#888;font-size:12px;">Mon–Fri 8am–5pm PST &nbsp;|&nbsp; ⚡ 24/7 Emergency Line</span>
   <span>Serving Washington State</span>
   <span>Coalescent Technologies LLC DBA Coal Tech LLC</span>
-
   <p class="disclosure">
     Coal Tech LLC is licensed and based in Washington State.
     Services outside Washington are provided only when subcontracted
     by a properly licensed commercial or industrial contractor.
   </p>
-   <p>We prioritize emergency service calls for rapid dispatch. However, final service completion timelines are subject to job-specific variables, including material availability and site availability.</p>
+  <p>We prioritize emergency service calls for rapid dispatch. However, final service completion timelines are subject to job-specific variables, including material availability and site availability.</p>
   <p>© 2017–2026 Coal Tech LLC. All rights reserved.</p>
 </footer>
+
+<!-- Sticky Mobile Emergency CTA -->
+<div class="mobile-emergency-bar">
+  <a href="tel:2533358622">⚡ Emergency? Call Now — 253-335-8622</a>
+</div>
+
+<script>
+function selectService(btn, value) {
+  document.querySelectorAll('.service-type-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  document.getElementById('service').value = value;
+  document.getElementById('service-error').style.display = 'none';
+}
+// Validate service selection before submit
+document.querySelector('form').addEventListener('submit', function(e) {
+  if (!document.getElementById('service').value) {
+    e.preventDefault();
+    document.getElementById('service-error').style.display = 'block';
+    document.querySelector('.service-type-buttons').scrollIntoView({behavior:'smooth', block:'center'});
+  }
+});
+</script>
 
 </body>
 </html>
