@@ -36,9 +36,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Phone number links - white */
+/* Phone number links - white by default, overridable with inline styles */
 a[href^="tel:"] {
-  color: #fff !important;
+  color: #fff;
   font-weight: bold;
 }
 
