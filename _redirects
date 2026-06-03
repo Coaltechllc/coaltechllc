@@ -6,3 +6,15 @@ https://www.coaltechllc.com/* https://coaltechllc.com/:splat 301!
 
 # Redirect www index.html directly
 https://www.coaltechllc.com/index.html https://coaltechllc.com/ 301!
+
+# Redirect duplicate root-level city pages to canonical service-area URLs
+/federal-way.html /service-areas/washington/federal-way.html 301!
+/seattle.html /service-areas/washington/seattle.html 301!
+/tacoma.html /service-areas/washington/tacoma.html 301!
+
+# Redirect old /services/ paths that never existed (broken canonicals)
+/services/commercial-mobile-welding.html /commercial-mobile-welding.html 301!
+/services/on-site-welding.html /on-site-welding.html 301!
+/services/pickup-delivery-fabrication.html /pickup-delivery-fabrication.html 301!
+/services/secure-facility-welding.html /secure-facility-welding.html 301!
+/services/structural-welding.html /structural-welding.html 301!
