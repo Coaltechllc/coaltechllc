@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Fabrication Service Request - Coal Tech LLC</title>
+<title>Service Request - Coal Tech LLC</title>
 <style>
         /* =========================
            RESET & BASE
@@ -354,6 +354,34 @@
         }
 
         /* =========================
+           MOBILE EMERGENCY BAR
+        ========================= */
+        .mobile-emergency-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #c9a14a;
+            text-align: center;
+            padding: 12px;
+            z-index: 9999;
+        }
+
+        .mobile-emergency-bar a {
+            color: #000 !important;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-emergency-bar {
+                display: block;
+            }
+        }
+
+        /* =========================
            RESPONSIVE - TABLET
         ========================= */
         @media (max-width: 768px) {
@@ -484,7 +512,64 @@
             scroll-behavior: smooth;
         }
     </style>
-<meta content="Request commercial welding services from Coal Tech LLC across Washington State. Fill out our service request form or call 253-335-8622 for a fast response." name="description"/></head>
+<meta content="Request commercial welding services from Coal Tech LLC across Washington State. Fill out our service request form or call 253-335-8622 for a fast response." name="description"/>
+
+<!-- Schema Markup for Local SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Coal Tech LLC",
+  "alternateName": "Coalescent Technologies LLC",
+  "url": "https://www.coaltechllc.com",
+  "logo": "https://www.coaltechllc.com/logo.png",
+  "image": "https://www.coaltechllc.com/logo.png",
+  "description": "Coal Tech LLC is a commercial and industrial welding contractor and hollow metal door and frame specialist serving the Greater Puget Sound and Pacific Northwest.",
+  "telephone": "+12533358622",
+  "email": "info@coaltechllc.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Federal Way",
+    "addressRegion": "WA",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.3223,
+    "longitude": -122.3126
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Washington"
+  },
+  "serviceType": [
+    "Commercial Welding",
+    "Industrial Welding",
+    "Hollow Metal Door Installation",
+    "Hollow Metal Frame Installation",
+    "Emergency Welding",
+    "Structural Welding",
+    "Field Modifications",
+    "Custom Fabrication"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/coaltechllc/",
+    "https://www.facebook.com/coaltechllc/",
+    "https://www.linkedin.com/company/coal-tech-llc",
+    "https://www.youtube.com/@coaltechllc"
+  ]
+}
+</script>
+
+</head>
 <body>
 <!-- Navigation -->
 <nav class="main-nav">
@@ -502,7 +587,7 @@
 <div class="form-wrapper">
 <div class="form-container">
 <div class="form-header">
-<h1>Fabrication Service Request</h1>
+<h1>Service Request</h1>
 <p>Welding &amp; Hollow Metal Door/Frame Services</p>
 </div>
 <div class="message success-message" id="successMessage">
@@ -770,8 +855,6 @@
             }
         });
     </script>
-
-</html>
 
 </body>
 </html>
